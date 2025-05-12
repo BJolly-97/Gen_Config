@@ -45,3 +45,6 @@ A. Dictionary Files
 - symX: Contains the numbered atoms (1-N, where N is the total number of Nearest Neighbours) and their 'rotated' forms, in a list (Used to inform the binary labelling system).
 
 B. Configuration Histograms and Associated 'Clapp' Files
+###### When running the config command, the most common file produced is a histogram plot of enhanced configurations. These plots correspond to unique pseudo-binary combinations of atoms in the system. The remainder are text files containing relevant statistical information.
+
+- STEMNAME_XC_subY_EF(_A/AB/B).png: This rather long file name is composed of multiple parts with usable information. The STEMNAME is the file name of the .rmc6f file used to generate the histograms. 1. _XC refers to the specific pseudobinary that the histogram is built from - 'X' in this instance is simply the number of the constituent atom, as given in the .rmc6f file under 'ATOMS'.  2. trial
