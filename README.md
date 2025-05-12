@@ -15,7 +15,7 @@
 ###### The first is to use the **Configurational_Analysis.bat** file in conjunction with the **exe** folder. When run, the .bat file will open a terminal window, and begin the check/download for all necessary python modules. A prompt window will then load into the terminal. 
 ###### The following commands then act as inputs for this terminal window:
 
-a. dict: 
+1. dict: 
 ###### Use this command to generate dictionary files for the structure in question. This command requires a **.cif** file for input. This can be entered as a **file path** string, with or without quotation marks (""). The important crystal information will then be extracted from the .cif file, and printed. The user is then given a list of **constituent atom types** from 0-x, where x is the total number of constituent elements, and prompted (Y/N) for any equivalent lattice sites. Atoms on an equivalent lattice should then be listed, by number, in the format 0,1,2... Prompts for further equivalent positions may then be accepted or rejected, and the script will finish running.
 
 2. config:
@@ -29,7 +29,7 @@ a. dict:
 
 #### 2. Files Produced by this Software
 
-###### 1. Dictionary Files
+A. Dictionary Files
 ###### When running the dict command, several files are produced depending on the number of atomic sub-lattices specified by the user The following are presented in alphabetical order.
 
 - .basisX: This file contains the coordinates of the numbered/labelled 'nearest neighbour' positions for atoms of the specified lattice, as well as a row showing the sublattice in question. The 'Atom No.' column contains the labelled atom position, which can be used to reconstruct the Configurations once generated. The file endings ('X') correspond to the sub-lattice number.
@@ -43,3 +43,5 @@ a. dict:
 - finsub & initsub: List the atoms present in the respective sub-lattices.
 
 - symX: Contains the numbered atoms (1-N, where N is the total number of Nearest Neighbours) and their 'rotated' forms, in a list (Used to inform the binary labelling system).
+
+B. Configuration Histograms and Associated 'Clapp' Files
