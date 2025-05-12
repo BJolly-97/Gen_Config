@@ -15,7 +15,7 @@
 ###### The first is to use the **Configurational_Analysis.bat** file in conjunction with the **exe** folder. When run, the .bat file will open a terminal window, and begin the check/download for all necessary python modules. A prompt window will then load into the terminal. 
 ###### The following commands then act as inputs for this terminal window:
 
-1. dict: 
+a. dict: 
 ###### Use this command to generate dictionary files for the structure in question. This command requires a **.cif** file for input. This can be entered as a **file path** string, with or without quotation marks (""). The important crystal information will then be extracted from the .cif file, and printed. The user is then given a list of **constituent atom types** from 0-x, where x is the total number of constituent elements, and prompted (Y/N) for any equivalent lattice sites. Atoms on an equivalent lattice should then be listed, by number, in the format 0,1,2... Prompts for further equivalent positions may then be accepted or rejected, and the script will finish running.
 
 2. config:
