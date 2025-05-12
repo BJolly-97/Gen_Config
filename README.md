@@ -1,11 +1,22 @@
 # Generalised Tool for the Analysis of Atomic Configurations in Crystalline Materials
 
-#### This repository contains the scripts required to perform atomic configurational analysis on the large-box models produced by RMCProfile, a Reverse Monte Carlo fitting software. The method has been developed using the principles outlined by Dr. Phillip C. Clapp in his work, 'Atomic Configurations in Binary Alloys' (Phys. Rev. B 4, 255 – 15 July, 1971 (DOI: https://doi.org/10.1103/PhysRevB.4.255)). Though the original paper confined analysis to binary crystalline materials of Primitive, FCC, or BCC structures, the above code is capable of performing configurational analysis on crystalline materials of any structure, with any number of constituent elements.
+#### This repository contains the scripts required to perform atomic configurational analysis on the large-box models produced by RMCProfile, a Reverse Monte Carlo fitting software. The method has been developed using the principles outlined by **Dr. Phillip C. Clapp in his work, 'Atomic Configurations in Binary Alloys' (Phys. Rev. B 4, 255 – 15 July, 1971 (DOI: https://doi.org/10.1103/PhysRevB.4.255))**. Though the original paper confined analysis to binary crystalline materials of Primitive, FCC, or BCC structures, the above code is capable of performing configurational analysis on crystalline materials of any structure, with any number of constituent elements.
 
 ###### Some of the instructions for use are contained in the README.txt files contained in the 'exe' and 'Batching Scripts' directories; the following, however, is an outline of both how to use the scripts, and the files produced by said scripts.
 
-###### NB: At present, this software can only be used on files provided in the form produced by RMCProfile, i.e. '.rmc6f' files. It is hoped that future versions will be adapted to accommodate all file types pertaining to the location and species of constituent atoms. 
+###### **NB: At present, this software can only be used on files provided in the form produced by RMCProfile, i.e. '.rmc6f' files. It is hoped that future versions will be adapted to accommodate all file types pertaining to the location and species of constituent atoms.** 
 
-###### NBII: It is also worth noting that the batch script version requires adapting for Mac and Linux OS, though all .py files contained herein are usable across all operating systems. It is also hoped that this will be addressed in future versions.  
+###### **NBII: It is also worth noting that the batch script version requires adapting for Mac and Linux OS, though all .py files contained herein are usable across all operating systems. It is also hoped that this will be addressed in future versions.**  
 
 #### 1. Using the software
+
+###### At present there are two main 'methods' for the use of this software.
+
+###### The first is to use the **Configurational_Analysis.bat** file in conjunction with the **exe** folder. When run, the .bat file will open a terminal window, and begin the check/download for all necessary python modules. A prompt window will then load into the terminal. 
+######The following commands then act as inputs for this terminal window:
+
+###### **1. dict**: 
+###### Use this command to generate dictionary files for the structure in question. This command requires a **.cif** file for input. This can be entered as a **file path** string, with or without quotation marks (""). The important crystal information will then be extracted from the .cif file, and printed. The user is then given a list of **constituent atom types** from 0-x, where x is the total number of constituent elements, and prompted (Y/N) for any equivalent lattice sites. Atoms on an equivalent lattice should then be listed, by number, in the format 0,1,2... Prompts for further equivalent positions may then be accepted or rejected, and the script will finish running.
+
+###### **2. config**:
+###### Use this command to determine the
