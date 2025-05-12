@@ -24,4 +24,12 @@
 ###### **3. vis**:
 ###### Use this command to generate interactive images of the enhanced configurations of your large-box model. This is, at present, a manual process: the user will be prompted for the dictionaries directory once again, followed by a request for the desired configurations for visualisation. Configurations may be input using their associated Configurational label, in any order, as long as they are separated by commas in the form: 0,12,34,14,... The plotting window that opens will make use of matplotlib.pyplot, for a three dimensional, rotatable image.
 
-###### The other method for using this software is to use the Python scripts contained in the 'Batching Scripts' directory. These .py files are identical to the ones contained in the 'exe' folder, and can be run in sequence using the **Configuration_Master.py** file if desired. The utility of this folder is to allow high-throughput configurational analysis for many datasets, without the requirement for user input. These .py files (specifically Generalised_Clapp_vx.py and Histograms_vx.py) can be run through the terminal via a looped batch script. Note: The Requirements.bat and requirements.txt files are there to highlight the necessary Python modules for the use of this software, and the .bat file can be run on its own to automate the download process. 
+###### The other method for using this software is to use the Python scripts contained in the 'Batching Scripts' directory. These .py files are identical to the ones contained in the 'exe' folder, and can be run in sequence using the **Configuration_Master.py** file if desired. The utility of this folder is to allow high-throughput configurational analysis for many datasets, without the requirement for user input. These .py files (specifically Generalised_Clapp_vx.py and Histograms_vx.py) can be run through the terminal via a looped batch script. Note: The Requirements.bat and requirements.txt files are there to highlight the necessary Python modules for the use of this software, and the .bat file can be run on its own to automate the module download process. 
+
+
+#### 2. Files Produced by this Software
+
+###### 1. Dictionary Files
+###### When running the dict command, several files are produced depending on the number of atomic sub-lattices specified by the user The following are presented in alphabetical order.
+
+- .basis0x file: This file contains the coordinates of the numbered/labelled 'nearest neighbour' positions for atoms of the specified lattice, as well as a row showing the sublattice in question. The 'Atom No.' column
