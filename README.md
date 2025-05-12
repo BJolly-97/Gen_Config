@@ -32,4 +32,14 @@
 ###### 1. Dictionary Files
 ###### When running the dict command, several files are produced depending on the number of atomic sub-lattices specified by the user The following are presented in alphabetical order.
 
-- .basis0x file: This file contains the coordinates of the numbered/labelled 'nearest neighbour' positions for atoms of the specified lattice, as well as a row showing the sublattice in question. The 'Atom No.' column
+- .basisX: This file contains the coordinates of the numbered/labelled 'nearest neighbour' positions for atoms of the specified lattice, as well as a row showing the sublattice in question. The 'Atom No.' column contains the labelled atom position, which can be used to reconstruct the Configurations once generated. The file endings ('X') correspond to the sub-lattice number.
+
+- binomX:  This file contains an ordered list of Configuration labels/numbers, followed by the multiplicity of this configuration for the lattice, and the number of 'dislike' atoms in this configuration.
+
+- .cellpos: This file contains the coordinates of all atoms in the reduced unit cell.
+
+- .cfgdictX: This file contains a list of all possible configurations in the system in decimal notation, and their corresponding Configuration label.
+
+- finsub & initsub: List the atoms present in the respective sub-lattices.
+
+- symX: Contains the numbered atoms (1-N, where N is the total number of Nearest Neighbours) and their 'rotated' forms, in a list (Used to inform the binary labelling system).
